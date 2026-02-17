@@ -1,13 +1,16 @@
-using UnityEngine;
+﻿using UnityEngine;
+
+
 
 public class DragItem : MonoBehaviour
 {
+    private bool dragging;
     private Vector3 offset;
-    private bool dragging = false;
 
     void OnMouseDown()
     {
-        offset = transform.position - GetMouseWorldPosition();
+        Vector3 mousePos = GetMouseWorldPosition();
+        offset = transform.position - mousePos;
         dragging = true;
     }
 
@@ -26,8 +29,8 @@ public class DragItem : MonoBehaviour
 
     Vector3 GetMouseWorldPosition()
     {
-        Vector3 mousePoint = Input.mousePosition;
-        mousePoint.z = 10f;
-        return Camera.main.ScreenToWorldPoint(mousePoint);
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = -Camera.main.transform.position.z; // ← CLAVE
+        return Camera.main.ScreenToWorldPoint(mousePos);
     }
 }
