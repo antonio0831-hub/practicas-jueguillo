@@ -30,7 +30,7 @@ public class DragItem : MonoBehaviour
     Vector3 GetMouseWorldPosition()
     {
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = -Camera.main.transform.position.z; // ← CLAVE
+        mousePos.z = -Camera.main.transform.position.z; 
         return Camera.main.ScreenToWorldPoint(mousePos);
     }
 }
