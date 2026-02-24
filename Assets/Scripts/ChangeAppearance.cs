@@ -2,17 +2,21 @@ using UnityEngine;
 
 public class ChangeAppearance : MonoBehaviour
 {
-    public Sprite newSprite;
+    public SpriteRenderer lipsRenderer;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Algo entr�");
-
-        if (other.CompareTag("Makeup"))
+        if (other.CompareTag("Lip"))
         {
-            Debug.Log("Es maquillaje!");
+            SpriteRenderer sr = other.GetComponent<SpriteRenderer>();
+            if (sr != null)
+            {
+                lipsRenderer.sprite = sr.sprite;
 
-            GetComponent<SpriteRenderer>().sprite = newSprite;
+                // Guardamos selección
+                CustomizationData.Instance.selectedLipShape = sr.sprite;
+            }
         }
     }
 }
+
