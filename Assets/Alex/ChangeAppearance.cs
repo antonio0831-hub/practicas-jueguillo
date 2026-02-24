@@ -2,17 +2,18 @@ using UnityEngine;
 
 public class ChangeAppearance : MonoBehaviour
 {
-    public Sprite newSprite;
+    public int puntos = 0;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Algo entró");
+        MakeupItem item = other.GetComponent<MakeupItem>();
 
-        if (other.CompareTag("Makeup"))
+        if (item != null && !item.usado)
         {
-            Debug.Log("Es maquillaje!");
+            GetComponent<SpriteRenderer>().sprite = item.aparienciaQueDa;
+            puntos += item.puntosQueDa;
 
-            GetComponent<SpriteRenderer>().sprite = newSprite;
+            item.usado = true;
         }
     }
 }
