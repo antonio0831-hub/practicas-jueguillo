@@ -293,8 +293,9 @@ GameObject:
   m_Component:
   - component: {fileID: 651599756}
   - component: {fileID: 651599755}
+  - component: {fileID: 651599757}
   m_Layer: 0
-  m_Name: Maquillaje_3
+  m_Name: Colorete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -374,6 +375,19 @@ Transform:
   - {fileID: 788196467}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &651599757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651599754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0444c9d72fbb949a16454c7eab8d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteButton
+  nombreEscena: Colorete
 --- !u!1 &727896242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,7 +1664,7 @@ GameObject:
   - component: {fileID: 2092880799}
   - component: {fileID: 2092880798}
   m_Layer: 0
-  m_Name: Maquillaje_2
+  m_Name: Pintalabios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

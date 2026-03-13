@@ -21,7 +21,7 @@ public class LipColorTarget : MonoBehaviour
     {
         if (!other.CompareTag("Lipstick")) return;
 
-        var item = other.GetComponent<LipstickItem>();
+        var item = other.GetComponent<coloritem>();
         if (item == null) return;
 
         // 1) aplica color visual YA

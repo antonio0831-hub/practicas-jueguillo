@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LipstickItem : MonoBehaviour
+public class coloritem : MonoBehaviour
 {
     public Color lipstickColor;
 
