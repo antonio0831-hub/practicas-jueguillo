@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: d85dbc7115557e54fb9bb4ea99898a81
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4129556020973499629
+    second: Maquillaje_Nuevo_0
+  - first:
+      213: 1621186091113730831
+    second: Maquillaje_Nuevo_1
+  - first:
+      213: -8967011942719920876
+    second: Maquillaje_Nuevo_2
+  - first:
+      213: 7359006154861202850
+    second: Maquillaje_Nuevo_3
+  - first:
+      213: 4337315727857824336
+    second: Maquillaje_Nuevo_4
+  - first:
+      213: 9141400828386772924
+    second: Maquillaje_Nuevo_5
+  - first:
+      213: 3158575121384702587
+    second: Maquillaje_Nuevo_6
+  - first:
+      213: -1831232186384763583
+    second: Maquillaje_Nuevo_7
+  - first:
+      213: 1374214843940498056
+    second: Maquillaje_Nuevo_8
+  - first:
+      213: -4573183807348842719
+    second: Maquillaje_Nuevo_9
+  - first:
+      213: -9123133647286800763
+    second: Maquillaje_Nuevo_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 60
+        width: 85
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4733e52512f4930800000000000000
+      internalID: 4129556020973499629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 101
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0353a3192c9f7610800000000000000
+      internalID: 1621186091113730831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 89
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4156e79b526ce8380800000000000000
+      internalID: -8967011942719920876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 89
+        width: 15
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad4a60bb11702660800000000000000
+      internalID: 7359006154861202850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 86
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0523ea5acad313c30800000000000000
+      internalID: 4337315727857824336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 98
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb78475ce97ccde70800000000000000
+      internalID: 9141400828386772924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 59
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72858a865385db20800000000000000
+      internalID: 3158575121384702587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_7
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 62
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145364d57082696e0800000000000000
+      internalID: -1831232186384763583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 49
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a6422ae11321310800000000000000
+      internalID: 1374214843940498056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_9
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 59
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f57669e89c880c0800000000000000
+      internalID: -4573183807348842719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquillaje_Nuevo_10
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 71
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e6e03c84e146180800000000000000
+      internalID: -9123133647286800763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Maquillaje_Nuevo_0: 4129556020973499629
+      Maquillaje_Nuevo_1: 1621186091113730831
+      Maquillaje_Nuevo_10: -9123133647286800763
+      Maquillaje_Nuevo_2: -8967011942719920876
+      Maquillaje_Nuevo_3: 7359006154861202850
+      Maquillaje_Nuevo_4: 4337315727857824336
+      Maquillaje_Nuevo_5: 9141400828386772924
+      Maquillaje_Nuevo_6: 3158575121384702587
+      Maquillaje_Nuevo_7: -1831232186384763583
+      Maquillaje_Nuevo_8: 1374214843940498056
+      Maquillaje_Nuevo_9: -4573183807348842719
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
