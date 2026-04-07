@@ -1608,6 +1608,7 @@ GameObject:
   - component: {fileID: 2024680207}
   - component: {fileID: 2024680206}
   - component: {fileID: 2024680205}
+  - component: {fileID: 2024680208}
   m_Layer: 5
   m_Name: Pausa
   m_TagString: Untagged
@@ -1698,6 +1699,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &2024680208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024680203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3202eab67372c5848a3648e7f7424676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuPausa
+  objetoMenuPausa: {fileID: 1236582043}
 --- !u!1 &2092880797
 GameObject:
   m_ObjectHideFlags: 0
