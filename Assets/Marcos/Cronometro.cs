@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RetoBotonPro : MonoBehaviour
 {
@@ -8,10 +9,9 @@ public class RetoBotonPro : MonoBehaviour
     public KeyCode teclaDelReto = KeyCode.E;
     public float tiempoMantenerNecesario = 3f;
     public float tiempoLimiteGlobal = 5f;
+    public float cambiodeEscena = 20f;
 
     [Header("Referencias UI")]
-    public GameObject textoVictoria;
-    public GameObject textoPerdida;
     public Slider barraProgreso;
 
     private float cronometroMantener = 0f;
@@ -20,28 +20,42 @@ public class RetoBotonPro : MonoBehaviour
 
     void Start()
     {
-        textoVictoria.SetActive(false);
-        textoPerdida.SetActive(false);
+        cambiodeEscena = 0f;
         if (barraProgreso != null) barraProgreso.value = 0;
     }
 
     void Update()
     {
-        // Si ya ganó o ya perdió, no hacemos nada más
-        if (retoFinalizado) return;
-
-        // 1. El tiempo global corre SOLO desde el segundo 1
-        cronometroGlobal += Time.deltaTime;
-
-        // 2. Comprobar si se acabó el tiempo global
-        if (cronometroGlobal >= tiempoLimiteGlobal)
+        if(cambiodeEscena >= 20f)
         {
-            FinalizarComoPerdida();
-            return;
+            CargadeEscena();
         }
 
         // 3. Lógica de mantener la tecla
-        if (Input.GetKey(teclaDelReto))
+    }
+
+    void FinalizarComoVictoria()
+    {
+        retoFinalizado = true;
+        NavigationManager.Instance.BackToPreviousScene();
+         if (barraProgreso != null) barraProgreso.gameObject.SetActive(false);
+    }
+
+    void FinalizarComoPerdida()
+    {
+        retoFinalizado = true;
+        SceneManager.LoadScene("GameOver");
+        if (barraProgreso != null) barraProgreso.gameObject.SetActive(false);
+    }
+    void CargadeEscena()
+    {
+        SceneManager.LoadScene("Cronometro");
+        Cronometro();
+    }
+    void Cronometro()
+    {
+        cronometroGlobal += Time.deltaTime;
+    if (Input.GetKey(teclaDelReto))
         {
             cronometroMantener += Time.deltaTime;
             
@@ -53,29 +67,11 @@ public class RetoBotonPro : MonoBehaviour
                 FinalizarComoVictoria();
             }
         }
-        else
+     if (cronometroGlobal >= tiempoLimiteGlobal)
         {
-            // Si suelta, la barra vuelve a 0 pero el tiempo global sigue volando
-            cronometroMantener = 0f;
-            if (barraProgreso != null) barraProgreso.value = 0;
-        }
+            FinalizarComoPerdida();
+            return;
+       
     }
-
-    void FinalizarComoVictoria()
-    {
-        retoFinalizado = true;
-        textoVictoria.SetActive(true);
-        textoPerdida.SetActive(false);
-        if (barraProgreso != null) barraProgreso.gameObject.SetActive(false);
-        Debug.Log("¡Ganaste a tiempo!");
-    }
-
-    void FinalizarComoPerdida()
-    {
-        retoFinalizado = true;
-        textoPerdida.SetActive(true); // Aquí "salta" el texto solo al pasar los 5s
-        textoVictoria.SetActive(false);
-        if (barraProgreso != null) barraProgreso.value = 0;
-        Debug.Log("¡Se acabó el tiempo! Perdiste.");
-    }
+}
 }
