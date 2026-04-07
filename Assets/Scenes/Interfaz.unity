@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de0444c9d72fbb949a16454c7eab8d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteButton
-  nombreEscena: Mesa
+  nombreEscena: Base
 --- !u!114 &602038759
 MonoBehaviour:
   m_ObjectHideFlags: 0
