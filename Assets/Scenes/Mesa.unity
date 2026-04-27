@@ -369,8 +369,8 @@ Transform:
   m_GameObject: {fileID: 651599754}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.83, y: -2.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.59, y: 1.6, z: 0}
+  m_LocalScale: {x: 0.33709, y: 0.33709, z: 0.33709}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 788196467}
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 968245297}
   - component: {fileID: 968245296}
   m_Layer: 0
-  m_Name: Maquillaje_1
+  m_Name: Decorativo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,8 +744,8 @@ Transform:
   m_GameObject: {fileID: 968245295}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.96, y: 2.32, z: -0.67}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.62, y: 2.41, z: -0.67}
+  m_LocalScale: {x: 0.29289, y: 0.29289, z: 0.29289}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -971,7 +971,7 @@ GameObject:
   - component: {fileID: 1626758158}
   - component: {fileID: 1626758157}
   m_Layer: 0
-  m_Name: Maquillaje_6
+  m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1044,8 +1044,8 @@ Transform:
   m_GameObject: {fileID: 1626758156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2, y: 2.94, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.34, y: 1.98, z: 0}
+  m_LocalScale: {x: 0.47851, y: 0.47851, z: 0.47851}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 1920944995}
   - component: {fileID: 1920944994}
   m_Layer: 0
-  m_Name: Maquillaje_7
+  m_Name: "Pesta\xF1as "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1408,8 +1408,8 @@ Transform:
   m_GameObject: {fileID: 1920944993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.85, y: 3.31, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.77, y: 2.02, z: 0}
+  m_LocalScale: {x: 0.39012, y: 0.39012, z: 0.39012}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1517,7 +1517,7 @@ GameObject:
   - component: {fileID: 1992712550}
   - component: {fileID: 1992712549}
   m_Layer: 0
-  m_Name: Maquillaje_5
+  m_Name: Decorativo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1590,8 +1590,8 @@ Transform:
   m_GameObject: {fileID: 1992712548}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.14, y: 0.79, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.93, y: 1.52, z: 0}
+  m_LocalScale: {x: 0.30763045, y: 0.30763045, z: 0.30763045}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1857,8 +1857,8 @@ Transform:
   m_GameObject: {fileID: 2092880797}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.07, y: 0.84, z: -0.17}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.09, y: 1.93, z: -0.17}
+  m_LocalScale: {x: 0.32825, y: 0.32825, z: 0.32825}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
