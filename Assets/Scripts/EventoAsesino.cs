@@ -53,6 +53,7 @@ public class EventoAsesinoGlobal : MonoBehaviour
         {
             SceneManager.LoadScene(escenaDelReto);
         }
+        ReiniciarEvento();
     }
 
     // Llama a esto desde el script de victoria para poder reiniciar el bucle si quieres

@@ -16,40 +16,30 @@ public class Cronometro : MonoBehaviour
     private float cronometroGlobal = 0f;
     private bool retoFinalizado = false;
 
-    void Start()
-    {
-        if (barraProgreso != null) barraProgreso.value = 0;
-        // Aquí no necesitas llamar a nada, el Update se encarga de empezar
-    }
+    // Se ejecuta cada vez que el objeto se activa (útil si reciclas el objeto)
 
     void Update()
     {
         if (retoFinalizado) return;
 
-        // El tiempo global empieza a correr en cuanto carga la escena
         cronometroGlobal += Time.deltaTime;
 
-        // Lógica de presionar la tecla
         if (Input.GetKey(teclaDelReto))
         {
             cronometroMantener += Time.deltaTime;
         }
         else
         {
-            // Si suelta la tecla, el progreso baja o se detiene (tú eliges)
             cronometroMantener = Mathf.Max(0, cronometroMantener - Time.deltaTime); 
         }
 
-        // Actualizar la barra
         if (barraProgreso != null) 
             barraProgreso.value = cronometroMantener / tiempoMantenerNecesario;
 
-        // VICTORIA: Si mantuvo el tiempo
         if (cronometroMantener >= tiempoMantenerNecesario)
         {
             FinalizarComoVictoria();
         }
-        // DERROTA: Si se acabó el tiempo global
         else if (cronometroGlobal >= tiempoLimiteGlobal)
         {
             FinalizarComoPerdida();
@@ -59,9 +49,10 @@ public class Cronometro : MonoBehaviour
     void FinalizarComoVictoria()
     {
         retoFinalizado = true;
-        Debug.Log("¡Victoria lograda! Intentando volver...");
-        // Carga la escena anterior (la Principal)
-        NavigationManager.Instance.BackToPreviousScene();
+        Debug.Log("¡Victoria!");
+        
+        if (NavigationManager.Instance != null)
+            NavigationManager.Instance.BackToPreviousScene();
     }
 
     void FinalizarComoPerdida()
