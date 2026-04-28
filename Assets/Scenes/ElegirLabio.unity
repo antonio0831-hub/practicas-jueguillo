@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 639899137}
   - component: {fileID: 639899140}
   m_Layer: 0
-  m_Name: headlips_0 (1)
+  m_Name: labios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -807,6 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeAppearance
   lipsRenderer: {fileID: 639899138}
+  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
 --- !u!212 &639899138
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1866,9 +1867,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1536151832}
-        m_TargetAssemblyTypeName: SpriteButton, Assembly-CSharp
-        m_MethodName: OnMouseDown
+      - m_Target: {fileID: 1536151834}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: IrASiguienteEscena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2464,6 +2465,7 @@ GameObject:
   - component: {fileID: 1350691964}
   - component: {fileID: 1350691968}
   - component: {fileID: 1350691969}
+  - component: {fileID: 1350691970}
   m_Layer: 0
   m_Name: 07_0
   m_TagString: Lip
@@ -2642,6 +2644,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.28, y: 0.17}
   m_EdgeRadius: 0
+--- !u!114 &1350691970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350691963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91a3e7c4209dde4f8f6c6e2efd113e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CosmeticApplier
+  cosmeticSprite: {fileID: 7336298474659753992, guid: b17bbf90443e36648bf47165a7ebe31f, type: 3}
+  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  faceRenderer: {fileID: 639899138}
 --- !u!1 &1536151831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,7 +2668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1536151833}
-  - component: {fileID: 1536151832}
+  - component: {fileID: 1536151834}
   m_Layer: 0
   m_Name: Cambio de escena
   m_TagString: Untagged
@@ -2659,19 +2676,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1536151832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536151831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de0444c9d72fbb949a16454c7eab8d50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpriteButton
-  nombreEscena: PintaLabios
 --- !u!4 &1536151833
 Transform:
   m_ObjectHideFlags: 0
@@ -2687,6 +2691,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1536151834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536151831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662c49c2cf45cdb4d837ec9b94865caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
+  nombreSiguienteEscena: Pintalabios
+  overlayRenderer: {fileID: 176581035}
+  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
 --- !u!1 &1710042920
 GameObject:
   m_ObjectHideFlags: 0
