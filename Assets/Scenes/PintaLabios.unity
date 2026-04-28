@@ -3698,10 +3698,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2085198793}
   - component: {fileID: 2085198792}
-  - component: {fileID: 2085198791}
   - component: {fileID: 2085198790}
   - component: {fileID: 2085198795}
-  - component: {fileID: 2085198796}
   m_Layer: 0
   m_Name: labios
   m_TagString: Untagged
@@ -3755,19 +3753,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.3, y: 0.17}
   m_EdgeRadius: 0
---- !u!114 &2085198791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085198789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c840406b18161344bfd86a28bd9f7cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeAppearance
-  lipsRenderer: {fileID: 2085198792}
 --- !u!212 &2085198792
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3815,7 +3800,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7020058987047771971, guid: 05070df663a0c2f4cb715ce8678150a0, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3823,7 +3808,7 @@ SpriteRenderer:
   m_Size: {x: 0.3, y: 0.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2085198793
@@ -3853,20 +3838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36efffbb6ec07840b40e156c8207d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipColorTarget
-  lipsRenderer: {fileID: 0}
---- !u!114 &2085198796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085198789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f166536c5a10a349b190617913d4efb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ApplyCustomization
-  lipsRenderer: {fileID: 0}
+  lipsRenderer: {fileID: 2085198792}
+  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

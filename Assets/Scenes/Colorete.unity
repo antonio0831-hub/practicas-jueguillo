@@ -1476,6 +1476,7 @@ GameObject:
   - component: {fileID: 799880670}
   - component: {fileID: 799880669}
   - component: {fileID: 799880668}
+  - component: {fileID: 799880671}
   m_Layer: 0
   m_Name: zona de maquillaje
   m_TagString: Untagged
@@ -1602,6 +1603,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &799880671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799880667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c840406b18161344bfd86a28bd9f7cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeAppearance
+  lipsRenderer: {fileID: 799880669}
+  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
 --- !u!1 &836264767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeAppearance
   lipsRenderer: {fileID: 1060986697}
+  dataStorage: {fileID: 0}
 --- !u!212 &1060986697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2626,6 +2642,7 @@ GameObject:
   - component: {fileID: 1698610730}
   - component: {fileID: 1698610729}
   - component: {fileID: 1698610728}
+  - component: {fileID: 1698610733}
   m_Layer: 0
   m_Name: bluestripesselect_0
   m_TagString: Untagged
@@ -2819,6 +2836,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89001a6c379e344ba6a1410e6bd7a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
+--- !u!114 &1698610733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698610725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91a3e7c4209dde4f8f6c6e2efd113e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CosmeticApplier
+  cosmeticSprite: {fileID: 4505345698844030827, guid: 55e8aea62de642b4790a9430c3c3ee13, type: 3}
+  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  faceRenderer: {fileID: 799880669}
 --- !u!1 &1931855991
 GameObject:
   m_ObjectHideFlags: 0

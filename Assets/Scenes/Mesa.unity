@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 651599755}
   - component: {fileID: 651599757}
   - component: {fileID: 651599758}
+  - component: {fileID: 651599759}
   m_Layer: 0
   m_Name: Colorete
   m_TagString: Untagged
@@ -435,6 +436,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.92, y: 2.57}
   m_EdgeRadius: 0
+--- !u!114 &651599759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651599754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3aebac23f2fe945a3adb7341434f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::cambiarescenasimple
+  Base: Colorete
 --- !u!1 &727896242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,7 +1933,7 @@ GameObject:
   - component: {fileID: 2092880801}
   - component: {fileID: 2092880800}
   - component: {fileID: 2092880799}
-  - component: {fileID: 2092880798}
+  - component: {fileID: 2092880802}
   m_Layer: 0
   m_Name: Pintalabios
   m_TagString: Untagged
@@ -1927,19 +1941,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2092880798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092880797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de0444c9d72fbb949a16454c7eab8d50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpriteButton
-  nombreEscena: ElegirLabio
 --- !u!61 &2092880799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2059,6 +2060,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092880802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092880797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3aebac23f2fe945a3adb7341434f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::cambiarescenasimple
+  Base: ElegirLabio
 --- !u!1 &2146679485
 GameObject:
   m_ObjectHideFlags: 0
