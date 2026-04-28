@@ -19,18 +19,13 @@ public class ChangeAppearance : MonoBehaviour
                 lipsRenderer.sprite = sr.sprite;
 
                 // 2. Guardar en el archivo de datos (ScriptableObject)
+// Dentro de OnTriggerEnter2D en ChangeAppearance.cs
 if (dataStorage != null)
 {
-    dataStorage.selectedLipShape = sr.sprite;
-    
-    // GUARDAR POSICIÓN Y ESCALA LOCALES
-    dataStorage.lipPosition = lipsRenderer.transform.localPosition;
-    dataStorage.lipScale = lipsRenderer.transform.localScale;
-
-    #if UNITY_EDITOR
-    EditorUtility.SetDirty(dataStorage);
-    AssetDatabase.SaveAssets();
-    #endif
+    dataStorage.selectedLipShape = sr.sprite; // CAMBIO: Guarda en el cajón de labios
+    dataStorage.lipPosition = lipsRenderer.transform.localPosition; //
+    dataStorage.lipScale = lipsRenderer.transform.localScale; //
+    // ... resto del código de guardado editor ...
 }
 
                 // 3. Guardar en el Singleton (opcional, según tu lógica)

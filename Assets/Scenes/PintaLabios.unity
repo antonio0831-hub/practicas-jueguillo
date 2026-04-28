@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
   lipstickColor: {r: 0.7176471, g: 0.37254903, b: 0.2509804, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &744046691
 BoxCollider2D:
@@ -2884,7 +2884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
   nombreSiguienteEscena: Mesa
   overlayRenderer: {fileID: 1861652937}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1 &1597443769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!212 &1861652937
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3699,7 +3699,7 @@ GameObject:
   - component: {fileID: 2085198793}
   - component: {fileID: 2085198792}
   - component: {fileID: 2085198790}
-  - component: {fileID: 2085198795}
+  - component: {fileID: 2085198796}
   m_Layer: 0
   m_Name: labios
   m_TagString: Untagged
@@ -3826,7 +3826,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2085198795
+--- !u!114 &2085198796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3835,11 +3835,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2085198789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b36efffbb6ec07840b40e156c8207d76, type: 3}
+  m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LipColorTarget
-  lipsRenderer: {fileID: 2085198792}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

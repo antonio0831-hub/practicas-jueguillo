@@ -3,20 +3,31 @@ using UnityEngine;
 public class ApplySavedCosmetic : MonoBehaviour
 {
     public CosmeticData dataStorage;
+    public bool esLabio; // Marca esta casilla en el Inspector solo para el objeto de los labios
 
     void Start()
     {
         SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        if (dataStorage == null || renderer == null) return;
 
-        if (dataStorage != null && dataStorage.selectedSprite != null)
+        if (esLabio)
         {
-            renderer.sprite = dataStorage.selectedSprite;
-            renderer.enabled = true;
-
+            // CARGA DATOS DE LABIOS
+            if (dataStorage.selectedLipShape != null)
+            {
+                renderer.sprite = dataStorage.selectedLipShape;
+                renderer.color = dataStorage.selectedColor;
+                transform.localPosition = dataStorage.lipPosition;
+                transform.localScale = dataStorage.lipScale;
+            }
         }
         else
         {
-            Debug.LogWarning("AVISO: No se encontró imagen en el archivo azul.");
+            // CARGA DATOS DE BASE
+            if (dataStorage.selectedBase != null)
+            {
+                renderer.sprite = dataStorage.selectedBase;
+            }
         }
     }
 }

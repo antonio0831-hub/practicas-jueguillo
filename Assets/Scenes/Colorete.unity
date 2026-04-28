@@ -1612,11 +1612,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 799880667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c840406b18161344bfd86a28bd9f7cf, type: 3}
+  m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeAppearance
-  lipsRenderer: {fileID: 799880669}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1 &836264767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2169,7 +2168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!212 &1023106606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2238,28 +2237,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1060986698}
   - component: {fileID: 1060986697}
-  - component: {fileID: 1060986696}
+  - component: {fileID: 1060986699}
   m_Layer: 0
-  m_Name: headlips_0 (1)
+  m_Name: labios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1060986696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060986695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c840406b18161344bfd86a28bd9f7cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeAppearance
-  lipsRenderer: {fileID: 1060986697}
-  dataStorage: {fileID: 0}
 --- !u!212 &1060986697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2329,6 +2314,66 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.213, y: -0.346, z: 0}
   m_LocalScale: {x: 1.0177, y: 1.0177, z: 1.0177}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1060986699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060986695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
+--- !u!1 &1091583572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091583574}
+  - component: {fileID: 1091583573}
+  m_Layer: 0
+  m_Name: Cambio de Escena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1091583573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091583572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662c49c2cf45cdb4d837ec9b94865caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
+  nombreSiguienteEscena: Mesa
+  overlayRenderer: {fileID: 1023106606}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
+--- !u!4 &1091583574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091583572}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 297.77716, y: 578.7382, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2531,9 +2576,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1302931192}
-        m_TargetAssemblyTypeName: SpriteButton, Assembly-CSharp
-        m_MethodName: OnMouseDown
+      - m_Target: {fileID: 1091583573}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: IrASiguienteEscena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2849,7 +2894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticApplier
   cosmeticSprite: {fileID: 4505345698844030827, guid: 55e8aea62de642b4790a9430c3c3ee13, type: 3}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 799880669}
 --- !u!1 &1931855991
 GameObject:
@@ -3080,3 +3125,4 @@ SceneRoots:
   - {fileID: 85654676}
   - {fileID: 265809574}
   - {fileID: 799880670}
+  - {fileID: 1091583574}

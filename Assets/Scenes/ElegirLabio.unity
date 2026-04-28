@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1 &442958720
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,8 +785,8 @@ GameObject:
   m_Component:
   - component: {fileID: 639899139}
   - component: {fileID: 639899138}
-  - component: {fileID: 639899137}
   - component: {fileID: 639899140}
+  - component: {fileID: 639899141}
   m_Layer: 0
   m_Name: labios
   m_TagString: Untagged
@@ -794,20 +794,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &639899137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639899136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c840406b18161344bfd86a28bd9f7cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeAppearance
-  lipsRenderer: {fileID: 639899138}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
 --- !u!212 &639899138
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -927,6 +913,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.3, y: 0.17}
   m_EdgeRadius: 0
+--- !u!114 &639899141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639899136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1 &820873482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,7 +2656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticApplier
   cosmeticSprite: {fileID: 7336298474659753992, guid: b17bbf90443e36648bf47165a7ebe31f, type: 3}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 639899138}
 --- !u!1 &1536151831
 GameObject:
@@ -2705,7 +2704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
   nombreSiguienteEscena: Pintalabios
   overlayRenderer: {fileID: 176581035}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1 &1710042920
 GameObject:
   m_ObjectHideFlags: 0

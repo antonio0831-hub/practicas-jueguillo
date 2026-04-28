@@ -14,4 +14,16 @@ public class cambiarescenasimple : MonoBehaviour
     {
 Application.Quit();
     }
+    private void OnMouseDown()
+    {
+        if (!string.IsNullOrEmpty(Base))
+        {
+            Debug.Log("Cambiando a la escena: " + Base);
+            SceneManager.LoadScene(Base);
+        }
+        else
+        {
+            Debug.LogWarning("¡Atención! No has puesto el nombre de la escena en el Inspector.");
+        }
+    }
 }
