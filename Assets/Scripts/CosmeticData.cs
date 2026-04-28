@@ -4,4 +4,5 @@ using UnityEngine;
 public class CosmeticData : ScriptableObject
 {
     public Sprite selectedSprite;
+    public Color selectedColor;
 }
