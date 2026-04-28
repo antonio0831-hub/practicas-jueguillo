@@ -5,16 +5,15 @@ using UnityEditor;
 
 public class CosmeticApplier : MonoBehaviour
 {
-    [Header("Configuración del Cosmético")]
-    public Sprite cosmeticSprite;      // La imagen de esta máscara
-    public CosmeticData dataStorage;   // Tu archivo azul 'Elección Usuario'
-    public SpriteRenderer faceRenderer; // El CosmeticLayer de la cara
+    public string categoryID; // Escribir "Base", "Lips", etc.
+    public Sprite cosmeticSprite;
+    public CosmeticData dataStorage;
+    public SpriteRenderer faceRenderer;
 
     private Vector3 startPos;
     private bool isDragging;
 
     void Start() => startPos = transform.position;
-
     void OnMouseDown() => isDragging = true;
 
     void OnMouseUp()
@@ -22,24 +21,20 @@ public class CosmeticApplier : MonoBehaviour
         isDragging = false;
         transform.position = startPos;
 
-        if (faceRenderer != null && dataStorage != null && cosmeticSprite != null)
+        if (faceRenderer != null && dataStorage != null)
         {
             faceRenderer.sprite = cosmeticSprite;
-            faceRenderer.enabled = true;
-
-         
-            dataStorage.selectedSprite = cosmeticSprite;
-
-          
-            #if UNITY_EDITOR
-            EditorUtility.SetDirty(dataStorage); 
-            AssetDatabase.SaveAssets();         
-            #endif
             
+            // Guardamos solo ID, Sprite y Color (Blanco por defecto al elegir forma)
+            dataStorage.SaveCosmetic(categoryID, cosmeticSprite, Color.white);
 
-            Debug.Log("SISTEMA: Guardado con éxito: " + cosmeticSprite.name);
+            #if UNITY_EDITOR
+            EditorUtility.SetDirty(dataStorage);
+            AssetDatabase.SaveAssets();
+            #endif
         }
     }
+
     void Update()
     {
         if (isDragging)

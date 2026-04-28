@@ -415,8 +415,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.227451, g: 0.22352943, b: 0.74509805, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &170394408
 BoxCollider2D:
@@ -623,8 +624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.22352943, g: 0.5254902, b: 0.74509805, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &370554642
 BoxCollider2D:
@@ -831,8 +833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.75294125, g: 0.21568629, b: 0.43921572, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &432763747
 BoxCollider2D:
@@ -1266,6 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.7176471, g: 0.37254903, b: 0.2509804, a: 1}
   dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
@@ -1711,8 +1715,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.8588236, g: 0.74509805, b: 0.18431373, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &864417027
 BoxCollider2D:
@@ -2009,8 +2014,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.7960785, g: 0.24705884, b: 0.7058824, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &1052947943
 BoxCollider2D:
@@ -2296,8 +2302,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.65882355, g: 0.25490198, b: 0.78823537, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &1399164538
 BoxCollider2D:
@@ -2504,8 +2511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.7137255, g: 0.19215688, b: 0.18823531, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &1404066390
 BoxCollider2D:
@@ -2789,8 +2797,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.25490198, g: 0.7372549, b: 0.78823537, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &1528220571
 BoxCollider2D:
@@ -2879,12 +2888,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1558553033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662c49c2cf45cdb4d837ec9b94865caf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f3aebac23f2fe945a3adb7341434f98, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
-  nombreSiguienteEscena: Mesa
-  overlayRenderer: {fileID: 1861652937}
-  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::cambiarescenasimple
+  Escena: Mesa
 --- !u!1 &1597443769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,8 +3077,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1558553036}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: IrASiguienteEscena
+        m_TargetAssemblyTypeName: cambiarescenasimple, Assembly-CSharp
+        m_MethodName: cambiarescena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3300,6 +3307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
+  categoryID: Base
   dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!212 &1861652937
 SpriteRenderer:
@@ -3639,8 +3647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920cf7d057d4a9f48a7ee76844be19fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LipstickItem
+  categoryID: ColorLabio
   lipstickColor: {r: 0.35686275, g: 0.6156863, b: 0.4431373, a: 1}
-  dataStorage: {fileID: 11400000, guid: a336743dba7fdaf4dbb9213c3b5108fd, type: 2}
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 2085198792}
 --- !u!61 &2056544278
 BoxCollider2D:
@@ -3699,7 +3708,7 @@ GameObject:
   - component: {fileID: 2085198793}
   - component: {fileID: 2085198792}
   - component: {fileID: 2085198790}
-  - component: {fileID: 2085198796}
+  - component: {fileID: 2085198797}
   m_Layer: 0
   m_Name: labios
   m_TagString: Untagged
@@ -3826,7 +3835,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2085198796
+--- !u!114 &2085198797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3838,6 +3847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
+  categoryID: FormaLabios
   dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

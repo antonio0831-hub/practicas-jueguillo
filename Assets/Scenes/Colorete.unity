@@ -1476,7 +1476,6 @@ GameObject:
   - component: {fileID: 799880670}
   - component: {fileID: 799880669}
   - component: {fileID: 799880668}
-  - component: {fileID: 799880671}
   m_Layer: 0
   m_Name: zona de maquillaje
   m_TagString: Untagged
@@ -1603,19 +1602,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &799880671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799880667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
-  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1 &836264767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,6 +2154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
+  categoryID: Base
   dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!212 &1023106606
 SpriteRenderer:
@@ -2238,6 +2225,7 @@ GameObject:
   - component: {fileID: 1060986698}
   - component: {fileID: 1060986697}
   - component: {fileID: 1060986699}
+  - component: {fileID: 1060986700}
   m_Layer: 0
   m_Name: labios
   m_TagString: Untagged
@@ -2330,6 +2318,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c39234de99ec1418e4645e27d53fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApplySavedCosmetic
+  categoryID: FormaLabios
+  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
+--- !u!114 &1060986700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060986695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36efffbb6ec07840b40e156c8207d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LipColorTarget
+  categoryID: ColorLabio
+  lipsRenderer: {fileID: 1060986697}
   dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!1 &1091583572
 GameObject:
@@ -2340,7 +2344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1091583574}
-  - component: {fileID: 1091583573}
+  - component: {fileID: 1091583575}
   m_Layer: 0
   m_Name: Cambio de Escena
   m_TagString: Untagged
@@ -2348,21 +2352,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1091583573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091583572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662c49c2cf45cdb4d837ec9b94865caf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
-  nombreSiguienteEscena: Mesa
-  overlayRenderer: {fileID: 1023106606}
-  dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
 --- !u!4 &1091583574
 Transform:
   m_ObjectHideFlags: 0
@@ -2378,6 +2367,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091583575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091583572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3aebac23f2fe945a3adb7341434f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::cambiarescenasimple
+  Escena: Mesa
 --- !u!1 &1302931187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,9 +2578,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1091583573}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: IrASiguienteEscena
+      - m_Target: {fileID: 1091583575}
+        m_TargetAssemblyTypeName: cambiarescenasimple, Assembly-CSharp
+        m_MethodName: cambiarescena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2893,7 +2895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c91a3e7c4209dde4f8f6c6e2efd113e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticApplier
-  cosmeticSprite: {fileID: 4505345698844030827, guid: 55e8aea62de642b4790a9430c3c3ee13, type: 3}
+  categoryID: Colorete
+  cosmeticSprite: {fileID: 8235589232552300461, guid: 77bc5a8ac610b0640bc12be38d7d4a5a, type: 3}
   dataStorage: {fileID: 11400000, guid: 9935f1059f839614785d63203b4c638d, type: 2}
   faceRenderer: {fileID: 799880669}
 --- !u!1 &1931855991

@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Interfaz.unity
     guid: 8dd65830f8d88054cacfc65fe118d0c8
   - enabled: 1
-    path: Assets/Scenes/ElegirLabio.unity
+    path: Assets/Scenes/ElegirLabios.unity
     guid: 5814222ef527ba7418fbad565159a581
   - enabled: 1
     path: Assets/Scenes/Mesa.unity

@@ -215,7 +215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de0444c9d72fbb949a16454c7eab8d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteButton
-  nombreEscena: Base
 --- !u!114 &602038759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3aebac23f2fe945a3adb7341434f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::cambiarescenasimple
-  Base: Base
+  Escena: Base
 --- !u!1 &1811148509
 GameObject:
   m_ObjectHideFlags: 0

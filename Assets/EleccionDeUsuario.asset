@@ -12,8 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcee27b21032ff34bbf0c130fa05150e, type: 3}
   m_Name: EleccionDeUsuario
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticData
-  selectedSprite: {fileID: 7336298474659753992, guid: b17bbf90443e36648bf47165a7ebe31f, type: 3}
-  selectedColor: {r: 0, g: 0, b: 0, a: 0}
-  selectedLipShape: {fileID: 6785363645637201597, guid: 6906b629082f1f64d9553a12b4409a8e, type: 3}
-  lipPosition: {x: -0.213, y: -0.346, z: 0}
-  lipScale: {x: 1.0177, y: 1.0177, z: 1.0177}
+  savedCosmetics:
+  - categoryID: Base
+    sprite: {fileID: -3596836189104837075, guid: c7d9c72ed5c71b949840bdba58d33d91, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - categoryID: FormaLabios
+    sprite: {fileID: 7336298474659753992, guid: b17bbf90443e36648bf47165a7ebe31f, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - categoryID: ColorLabio
+    sprite: {fileID: 0}
+    color: {r: 0.7176471, g: 0.37254903, b: 0.2509804, a: 1}
+  - categoryID: Colorete
+    sprite: {fileID: 8235589232552300461, guid: 77bc5a8ac610b0640bc12be38d7d4a5a, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - categoryID: Lentilla Izq
+    sprite: {fileID: -1723167373414161865, guid: f5eaeeed46daae0459f05108d0c78bfc, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - categoryID: Lentillas Der
+    sprite: {fileID: -6491815443567973410, guid: 9534fe590bbbdd647828fce1a3920f36, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}

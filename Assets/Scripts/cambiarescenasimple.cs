@@ -2,11 +2,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class cambiarescenasimple : MonoBehaviour
 {
-    public string Base;
+    public string Escena;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void cambiarescena()
     {
-        SceneManager.LoadScene(Base);
+        SceneManager.LoadScene(Escena);
     }
 
     // Update is called once per frame
@@ -16,10 +16,10 @@ Application.Quit();
     }
     private void OnMouseDown()
     {
-        if (!string.IsNullOrEmpty(Base))
+        if (!string.IsNullOrEmpty(Escena))
         {
-            Debug.Log("Cambiando a la escena: " + Base);
-            SceneManager.LoadScene(Base);
+            Debug.Log("Cambiando a la escena: " +   Escena);
+            SceneManager.LoadScene(Escena);
         }
         else
         {

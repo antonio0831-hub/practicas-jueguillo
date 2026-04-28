@@ -5,8 +5,9 @@ using UnityEditor;
 
 public class LipColorTarget : MonoBehaviour
 {
+    public string categoryID = "Lips"; 
     public SpriteRenderer lipsRenderer;
-    public CosmeticData dataStorage; // Referencia al archivo azul 'Elección Usuario'
+    public CosmeticData dataStorage; 
 
     private void Awake()
     {
@@ -14,26 +15,24 @@ public class LipColorTarget : MonoBehaviour
             lipsRenderer = GetComponent<SpriteRenderer>();
     }
 
-private void Start()
-{
-    if (dataStorage != null)
+    private void Start()
     {
-        // 1. Cargar la forma (Sprite)
-        if (dataStorage.selectedLipShape != null)
-            lipsRenderer.sprite = dataStorage.selectedLipShape;
-
-        // 2. Cargar el Color
-        lipsRenderer.color = dataStorage.selectedColor;
-
-        // 3. CARGAR POSICIÓN Y ESCALA (Esto corrige el problema)
-        lipsRenderer.transform.localPosition = dataStorage.lipPosition;
-        lipsRenderer.transform.localScale = dataStorage.lipScale;
+        if (dataStorage != null)
+        {
+            // Cargamos por categoría
+            var data = dataStorage.GetCosmetic(categoryID);
+            if (data != null)
+            {
+                if (data.sprite != null) lipsRenderer.sprite = data.sprite;
+                lipsRenderer.color = data.color;
+                // NOTA: Ya no tocamos el transform.localPosition ni scale aquí
+            }
+        }
+        else if (CustomizationData.Instance != null)
+        {
+            lipsRenderer.color = CustomizationData.Instance.selectedLipColor;
+        }
     }
-    else if (CustomizationData.Instance != null)
-    {
-        lipsRenderer.color = CustomizationData.Instance.selectedLipColor;
-    }
-}
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -42,24 +41,19 @@ private void Start()
         var item = other.GetComponent<coloritem>();
         if (item == null) return;
 
-        // APLICAR COLOR VISUAL
         lipsRenderer.color = item.lipstickColor;
 
-        // GUARDAR EN SINGLETON (Para cambio entre escenas rápido)
-        if (CustomizationData.Instance != null)
-            CustomizationData.Instance.selectedLipColor = item.lipstickColor;
-
-        // GUARDAR EN COSMETIC DATA (Persistencia en disco)
         if (dataStorage != null)
         {
-            dataStorage.selectedColor = item.lipstickColor;
+            // Al pintar, mantenemos el sprite que ya tiene puesto el renderer
+            dataStorage.SaveCosmetic(categoryID, lipsRenderer.sprite, item.lipstickColor);
 
             #if UNITY_EDITOR
             EditorUtility.SetDirty(dataStorage);
             AssetDatabase.SaveAssets();
             #endif
             
-            Debug.Log("SISTEMA: Color de labios guardado en CosmeticData: " + item.lipstickColor);
+            Debug.Log($"Color de {categoryID} actualizado en el almacén.");
         }
     }
 }
