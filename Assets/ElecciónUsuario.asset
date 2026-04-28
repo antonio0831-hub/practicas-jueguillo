@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcee27b21032ff34bbf0c130fa05150e, type: 3}
   m_Name: "Elecci\xF3nUsuario"
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticData
+<<<<<<< Updated upstream
   selectedSprite: {fileID: -3596836189104837075, guid: c7d9c72ed5c71b949840bdba58d33d91, type: 3}
   selectedColor: {r: 0.7176471, g: 0.37254903, b: 0.2509804, a: 1}
   selectedLipShape: {fileID: 0}
   lipPosition: {x: 0, y: 0, z: 0}
   lipScale: {x: 0, y: 0, z: 0}
+=======
+  selectedSprite: {fileID: -4261601838768752043, guid: e0d5a6cc08686bf4eb7c801d97834f41, type: 3}
+  selectedColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> Stashed changes
