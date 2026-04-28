@@ -11,6 +11,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escenas Personales/Marcos.unity
     guid: 4e3cbc193591c8d4689fd051623cb3ce
+  - enabled: 1
+    path: Assets/Scenes/Interfaz.unity
+    guid: 8dd65830f8d88054cacfc65fe118d0c8
+  - enabled: 1
+    path: Assets/Scenes/ElegirLabio.unity
+    guid: 5814222ef527ba7418fbad565159a581
+  - enabled: 1
+    path: Assets/Scenes/Mesa.unity
+    guid: 371fd2f934330f44eb2073b8f3714d38
+  - enabled: 1
+    path: Assets/Scenes/PintaLabios.unity
+    guid: 63edb15cecc5fd240b24186663a0d8d7
+  - enabled: 1
+    path: Assets/Scenes/Colorete.unity
+    guid: 2a5b88ba26b3a564dae0feda6e9223f1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
