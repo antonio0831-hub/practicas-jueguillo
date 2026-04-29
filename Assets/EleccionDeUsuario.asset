@@ -21,12 +21,12 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
   - categoryID: ColorLabio
     sprite: {fileID: 0}
-    color: {r: 0.7137255, g: 0.19215688, b: 0.18823531, a: 1}
+    color: {r: 0.35686275, g: 0.6156863, b: 0.4431373, a: 1}
   - categoryID: Colorete
     sprite: {fileID: 8235589232552300461, guid: 77bc5a8ac610b0640bc12be38d7d4a5a, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
   - categoryID: Lentilla Izq
-    sprite: {fileID: -1723167373414161865, guid: f5eaeeed46daae0459f05108d0c78bfc, type: 3}
+    sprite: {fileID: 8663249244449991638, guid: 9534fe590bbbdd647828fce1a3920f36, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
   - categoryID: Lentillas Der
     sprite: {fileID: -6491815443567973410, guid: 9534fe590bbbdd647828fce1a3920f36, type: 3}

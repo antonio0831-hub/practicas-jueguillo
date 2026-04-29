@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 public class cambiarescenasimple : MonoBehaviour
 {
     public string Escena;
+    public string Escena2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void cambiarescena()
     {
@@ -25,5 +26,16 @@ Application.Quit();
         {
             Debug.LogWarning("¡Atención! No has puesto el nombre de la escena en el Inspector.");
         }
+    }
+    public void escenanterior()
+    {
+           if (NavigationManager.Instance != null)
+                {
+                    NavigationManager.Instance.LoadNewScene(Escena2);
+                }
+                else
+                {
+                    SceneManager.LoadScene(Escena2);
+                }
     }
 }

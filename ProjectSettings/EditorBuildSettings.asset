@@ -5,27 +5,45 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MONTAJE.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Escenas Personales/Marcos.unity
     guid: 4e3cbc193591c8d4689fd051623cb3ce
   - enabled: 1
     path: Assets/Scenes/Interfaz.unity
     guid: 8dd65830f8d88054cacfc65fe118d0c8
   - enabled: 1
-    path: Assets/Scenes/ElegirLabios.unity
-    guid: 5814222ef527ba7418fbad565159a581
+    path: Assets/Scenes/Base.unity
+    guid: 588bdcd137097d64abaeb2ead86e7bab
   - enabled: 1
     path: Assets/Scenes/Mesa.unity
     guid: 371fd2f934330f44eb2073b8f3714d38
+  - enabled: 1
+    path: Assets/Scenes/ElegirLabios.unity
+    guid: 5814222ef527ba7418fbad565159a581
   - enabled: 1
     path: Assets/Scenes/PintaLabios.unity
     guid: 63edb15cecc5fd240b24186663a0d8d7
   - enabled: 1
     path: Assets/Scenes/Colorete.unity
     guid: 2a5b88ba26b3a564dae0feda6e9223f1
+  - enabled: 1
+    path: Assets/Scenes/Cronometro.unity
+    guid: 7a0a89becabfb3c4293555c44c1c82cf
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 419553631e64da64b9e23c99fc96c502
+  - enabled: 1
+    path: Assets/Scenes/Lentillas.unity
+    guid: e5b2a93a03a70ec458f02632aa1227f3
+  - enabled: 1
+    path: Assets/Scenes/Pausa.unity
+    guid: 39e4aaacd01e615419cd8f4bd2bb0860
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 08f2eb3b991fd9a49a9ff3f4e2b3cf47
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
