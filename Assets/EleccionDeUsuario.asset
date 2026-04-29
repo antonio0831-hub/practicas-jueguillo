@@ -21,7 +21,7 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
   - categoryID: ColorLabio
     sprite: {fileID: 0}
-    color: {r: 0.7176471, g: 0.37254903, b: 0.2509804, a: 1}
+    color: {r: 0.7137255, g: 0.19215688, b: 0.18823531, a: 1}
   - categoryID: Colorete
     sprite: {fileID: 8235589232552300461, guid: 77bc5a8ac610b0640bc12be38d7d4a5a, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
