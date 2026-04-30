@@ -2617,7 +2617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3aebac23f2fe945a3adb7341434f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::cambiarescenasimple
-  Escena: Mesa
+  Escena: Lentillas
   Escena2: Colorete
 --- !u!1 &1136011177
 GameObject:

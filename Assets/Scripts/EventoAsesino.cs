@@ -11,7 +11,7 @@ public class EventoAsesinoGlobal : MonoBehaviour
     
     private float cronometro = 0f;
     private bool eventoActivado = false;
-    private string Final;
+    public string escenaFinal;
 
     void Awake()
     {
@@ -29,7 +29,7 @@ public class EventoAsesinoGlobal : MonoBehaviour
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == Final) return;
+        if (SceneManager.GetActiveScene().name == escenaFinal) return;
         // Solo cuenta si el evento no ha ocurrido todavía
         if (!eventoActivado)
         {
