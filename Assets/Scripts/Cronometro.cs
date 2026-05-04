@@ -46,14 +46,22 @@ public class Cronometro : MonoBehaviour
         }
     }
 
-    void FinalizarComoVictoria()
+void FinalizarComoVictoria()
+{
+    retoFinalizado = true;
+    
+    // 1. Primero reiniciamos el estado del asesino
+    if (EventoAsesinoGlobal.Instance != null)
     {
-        retoFinalizado = true;
-        Debug.Log("¡Victoria!");
-        
-        if (NavigationManager.Instance != null)
-            NavigationManager.Instance.BackToPreviousScene();
+        EventoAsesinoGlobal.Instance.ReiniciarEvento();
     }
+
+    // 2. Luego volvemos a la escena
+    if (NavigationManager.Instance != null)
+    {
+        NavigationManager.Instance.BackToPreviousScene();
+    }
+}
 
     void FinalizarComoPerdida()
     {

@@ -1978,6 +1978,7 @@ MonoBehaviour:
   tiempoParaElSusto: 18
   escenaDelReto: Cronometro
   escenaFinal: Final
+  escenaPausa: Pausa
 --- !u!4 &1831145374
 Transform:
   m_ObjectHideFlags: 0

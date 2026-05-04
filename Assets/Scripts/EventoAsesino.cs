@@ -12,6 +12,7 @@ public class EventoAsesinoGlobal : MonoBehaviour
     private float cronometro = 0f;
     private bool eventoActivado = false;
     public string escenaFinal;
+    public string escenaPausa;
 
     void Awake()
     {
@@ -30,6 +31,7 @@ public class EventoAsesinoGlobal : MonoBehaviour
     void Update()
     {
         if (SceneManager.GetActiveScene().name == escenaFinal) return;
+        if(SceneManager.GetActiveScene().name == escenaPausa) return;
         // Solo cuenta si el evento no ha ocurrido todavía
         if (!eventoActivado)
         {
@@ -41,12 +43,16 @@ public class EventoAsesinoGlobal : MonoBehaviour
             }
         }
     }
-
-    void ActivarEvento()
+void ActivarEvento()
     {
         eventoActivado = true;
-        Debug.Log("¡El tiempo global se ha agotado! Iniciando reto...");
-        
+
+        // --- NUEVA LÍNEA DE SEGURIDAD ---
+        #if UNITY_EDITOR
+        UnityEditor.AssetDatabase.SaveAssets(); // Fuerza a Unity a escribir los cambios en el archivo azul
+        #endif
+        // --------------------------------
+
         if (NavigationManager.Instance != null)
         {
             NavigationManager.Instance.LoadNewScene(escenaDelReto);
@@ -57,11 +63,13 @@ public class EventoAsesinoGlobal : MonoBehaviour
         }
         ReiniciarEvento();
     }
-
     // Llama a esto desde el script de victoria para poder reiniciar el bucle si quieres
-    public void ReiniciarEvento()
-    {
-        cronometro = 0f;
-        eventoActivado = false;
-    }
+public void ReiniciarEvento()
+{
+    cronometro = 0f;
+    eventoActivado = false;
+    
+    // Al reiniciar, buscamos todos los objetos con el script de carga y los obligamos a actualizarse
+    ApplySavedCosmetic[] todosLosCosmeticos = FindObjectsByType<ApplySavedCosmetic>(FindObjectsSortMode.None);
+}
 }

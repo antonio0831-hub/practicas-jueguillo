@@ -1,11 +1,8 @@
 using UnityEngine;
-#if UNITY_EDITOR
-using UnityEditor; 
-#endif
 
 public class LipColorTarget : MonoBehaviour
 {
-    public string categoryID = "Lips"; 
+    public string categoryID = "ColorLabio"; 
     public SpriteRenderer lipsRenderer;
     public CosmeticData dataStorage; 
 
@@ -17,43 +14,39 @@ public class LipColorTarget : MonoBehaviour
 
     private void Start()
     {
+        // 1. Forzamos la carga desde el disco inmediatamente
         if (dataStorage != null)
         {
-            // Cargamos por categoría
+            dataStorage.CargarDesdeDisco();
+            
             var data = dataStorage.GetCosmetic(categoryID);
             if (data != null)
             {
+                // Solo si encontramos datos en el "cajón" ColorLabio, los aplicamos
                 if (data.sprite != null) lipsRenderer.sprite = data.sprite;
                 lipsRenderer.color = data.color;
-                // NOTA: Ya no tocamos el transform.localPosition ni scale aquí
+                Debug.Log($"Labios cargados correctamente con color: {data.color}");
             }
         }
-        else if (CustomizationData.Instance != null)
-        {
-            lipsRenderer.color = CustomizationData.Instance.selectedLipColor;
-        }
+        // HEMOS BORRADO EL "ELSE IF" DEL SINGLETON. 
+        // Ahora el script no tiene otra forma de ponerse color que no sea el archivo azul.
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Seguridad: Solo si el objeto que toca los labios es el pintalabios (Tag Lipstick)
         if (!other.CompareTag("Lipstick")) return;
 
         var item = other.GetComponent<coloritem>();
         if (item == null) return;
 
+        // Actualizamos visualmente y guardamos
         lipsRenderer.color = item.lipstickColor;
 
         if (dataStorage != null)
         {
-            // Al pintar, mantenemos el sprite que ya tiene puesto el renderer
+            dataStorage.CargarDesdeDisco();
             dataStorage.SaveCosmetic(categoryID, lipsRenderer.sprite, item.lipstickColor);
-
-            #if UNITY_EDITOR
-            EditorUtility.SetDirty(dataStorage);
-            AssetDatabase.SaveAssets();
-            #endif
-            
-            Debug.Log($"Color de {categoryID} actualizado en el almacén.");
         }
     }
 }

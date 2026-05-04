@@ -1,45 +1,31 @@
 using UnityEngine;
-#if UNITY_EDITOR
-using UnityEditor; 
-#endif
 
 public class coloritem : MonoBehaviour
 {
-    [Header("Configuración de Color")]
-    public string categoryID = "Lips"; // Identificador para saber qué estamos pintando
+    public string categoryID = "ColorLabio"; 
     public Color lipstickColor;
     public CosmeticData dataStorage;   
     public SpriteRenderer faceRenderer; 
 
     void OnMouseUp()
     {
-        // 1. Compatibilidad con Singleton original
-        if (CustomizationData.Instance != null)
-        {
-            CustomizationData.Instance.selectedLipColor = lipstickColor;
-        }
-
-        // 2. Nuevo sistema de categorías (sin posición ni escala)
         if (dataStorage != null)
         {
-            // Buscamos lo que ya existe para mantener el Sprite actual al cambiar solo el color
+            // Cargamos lo que hay para no borrar otros cajones
+            dataStorage.CargarDesdeDisco();
+
             var data = dataStorage.GetCosmetic(categoryID);
             Sprite currentSprite = (data != null) ? data.sprite : null;
 
-            // Guardamos: ID, Sprite actual y el Nuevo Color
+            // Escribimos el color en el cajón
             dataStorage.SaveCosmetic(categoryID, currentSprite, lipstickColor);
 
-            if (faceRenderer != null)
-            {
-                faceRenderer.color = lipstickColor;
-            }
+            if (faceRenderer != null) faceRenderer.color = lipstickColor;
 
             #if UNITY_EDITOR
-            EditorUtility.SetDirty(dataStorage); 
-            AssetDatabase.SaveAssets();         
+            UnityEditor.EditorUtility.SetDirty(dataStorage);
+            UnityEditor.AssetDatabase.SaveAssets();
             #endif
-
-            Debug.Log($"Color de {categoryID} guardado: {lipstickColor}");
         }
     }
 }
