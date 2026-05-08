@@ -18,6 +18,7 @@ public class cambiarescenasimple : MonoBehaviour
     // Update is called once per frame
     public void Salir()
     {
+Debug.Log("Saliendo del juego...");
 Application.Quit();
     }
     private void OnMouseDown()

@@ -130,12 +130,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 59
-        width: 87
-        height: 43
+        x: 45
+        y: 97
+        width: 11
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -152,12 +152,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_1
       rect:
         serializedVersion: 2
-        x: 97
-        y: 100
-        width: 13
-        height: 28
+        x: 81
+        y: 85
+        width: 32
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -174,12 +174,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_2
       rect:
         serializedVersion: 2
-        x: 113
-        y: 88
-        width: 34
-        height: 53
+        x: 136
+        y: 85
+        width: 15
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_3
       rect:
         serializedVersion: 2
-        x: 148
-        y: 88
-        width: 17
-        height: 46
+        x: 163
+        y: 82
+        width: 44
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_4
       rect:
         serializedVersion: 2
-        x: 175
-        y: 85
-        width: 46
-        height: 64
+        x: 232
+        y: 84
+        width: 19
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_5
       rect:
         serializedVersion: 2
-        x: 234
-        y: 97
-        width: 21
-        height: 42
+        x: 281
+        y: 95
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_6
       rect:
         serializedVersion: 2
-        x: 249
-        y: 58
-        width: 50
-        height: 51
+        x: 34
+        y: 26
+        width: 85
+        height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -284,12 +284,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_7
       rect:
         serializedVersion: 2
-        x: 123
-        y: 61
-        width: 54
-        height: 23
+        x: 131
+        y: 28
+        width: 52
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -306,12 +306,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_8
       rect:
         serializedVersion: 2
-        x: 190
-        y: 48
-        width: 54
-        height: 33
+        x: 198
+        y: 15
+        width: 52
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: Maquillaje_Nuevo_Seleccionado_9
       rect:
         serializedVersion: 2
-        x: 303
-        y: 58
-        width: 22
-        height: 30
+        x: 267
+        y: 15
+        width: 48
+        height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -350,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b2b8e9a015a0b74a8d6f1e2bdef8980
     internalID: 0
     vertices: []
     indices: 
@@ -358,7 +358,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Maquillaje_Nuevo_Seleccionado_0: 5701680485637985633
       Maquillaje_Nuevo_Seleccionado_1: 3291567990573556350
