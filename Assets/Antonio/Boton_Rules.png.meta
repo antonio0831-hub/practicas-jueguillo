@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e8628a29400946f4d891cef5fecd2ca9
+guid: 57771159638776d45963c96793b245b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5490491122633181757
-    second: Capucchino_0
+      213: 322229531160924831
+    second: Boton_Rules_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Capucchino_0
+      name: Boton_Rules_0
       rect:
         serializedVersion: 2
-        x: 86
-        y: 72
-        width: 78
-        height: 102
+        x: 0
+        y: 0
+        width: 1310
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3a8cfe0694223c40800000000000000
-      internalID: 5490491122633181757
+      spriteID: f92dcf42d0ac87400800000000000000
+      internalID: 322229531160924831
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Capucchino_0: 5490491122633181757
+      Boton_Rules_0: 322229531160924831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

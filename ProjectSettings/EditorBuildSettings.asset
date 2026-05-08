@@ -44,6 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final.unity
     guid: 08f2eb3b991fd9a49a9ff3f4e2b3cf47
+  - enabled: 1
+    path: Assets/Scenes/VideoIntro.unity
+    guid: ccd1200871ea42242ab6daf4f87153f9
+  - enabled: 1
+    path: Assets/Scenes/NormasJuego.unity
+    guid: 30c80d98eb62aef44903f4c082bffb51
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

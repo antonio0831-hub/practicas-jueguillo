@@ -10,6 +10,11 @@ public class cambiarescenasimple : MonoBehaviour
         SceneManager.LoadScene(Escena);
     }
 
+    public void mostrarnormas()
+    {
+        SceneManager.LoadScene("NormasJuego");
+    }
+
     // Update is called once per frame
     public void Salir()
     {

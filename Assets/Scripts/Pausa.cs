@@ -7,6 +7,7 @@ public class Pausa : MonoBehaviour
     public KeyCode Tecla = KeyCode.Escape;
     public string escena;
     public string escena2;
+    public string NormasJuego;
 
 void Update()
     {
@@ -38,5 +39,10 @@ void Update()
     public void salirdeljuego()
     {
         SceneManager.LoadScene(escena2);
+    }
+
+    public void mostrarnormas()
+    {
+        SceneManager.LoadScene("NormasJuego");
     }
 }
