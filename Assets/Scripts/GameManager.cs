@@ -24,4 +24,5 @@ public class GameManager : MonoBehaviour
         puntajeTotal += puntos;
         Debug.Log("Puntos totales: " + puntajeTotal);
     }
+    
 }

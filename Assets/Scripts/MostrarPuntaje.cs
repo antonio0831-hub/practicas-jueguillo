@@ -1,9 +1,10 @@
 using UnityEngine;
-using TMPro; // Necesario para usar TextMeshPro
-
+using TMPro;
 public partial class MostrarPuntaje : MonoBehaviour
 {
     public TextMeshProUGUI textoPuntaje;
+    public GameObject TextoGanador;
+    public GameObject TextoPerdedor;
 
     void Start()
     {
@@ -12,6 +13,14 @@ public partial class MostrarPuntaje : MonoBehaviour
         {
             // Accedemos directamente a puntajeTotal del GameManager
             textoPuntaje.text = "Puntaje Final: " + GameManager.Instancia.puntajeTotal.ToString();
+        }
+        if(GameManager.Instancia.puntajeTotal >= 200)
+        {
+            TextoGanador.SetActive(true);
+        }
+        else
+        {
+            TextoPerdedor.SetActive(false);
         }
     }
 }
